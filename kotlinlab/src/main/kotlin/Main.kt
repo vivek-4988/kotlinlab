@@ -1,3 +1,5 @@
+import functionskotlin.MultiObjectFunction
+
 val PI = 3.14
 var x = 1;
 
@@ -16,6 +18,14 @@ fun main(args: Array<String>) {
     println(x)
     increment()
     println(x)
+
+    val myMultiObj = MultiObjectFunction()
+    with(myMultiObj){
+        penUp()
+        print(turn(90.0))
+        println(forward(9.8))
+        penDown()
+    }
 
 }
 
