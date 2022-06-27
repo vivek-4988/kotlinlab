@@ -2,7 +2,7 @@ package functionskotlin
 
 fun main() {
     println(1.doPlus(2))
-    println(2 times "Bye")
+    //println(2 times "Bye")
 
     val pair = "Ferrari" to "Katrina"                          // 3
     println(pair)
@@ -15,4 +15,4 @@ fun main() {
 infix fun Int.doPlus(a: Int) = a*a
 
 
-infix fun Int.times(str: String) = str.repeat(this)        // 1
+//infix fun Int.times(str: String) = str.repeat(this)        // 1
