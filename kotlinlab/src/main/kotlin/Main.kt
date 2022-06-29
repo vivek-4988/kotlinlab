@@ -1,3 +1,4 @@
+import classinstance.appRunEnum
 import functionskotlin.MultiObjectFunction
 
 val PI = 3.14
@@ -6,7 +7,6 @@ var x = 1;
 fun main(args: Array<String>) {
 //    println(sum(4, 3))
 //    printSum(3,4);
-
 
     val a: Int = 1  // immediate assignment
     val b = 2   // `Int` type is inferred
@@ -27,6 +27,18 @@ fun main(args: Array<String>) {
         penDown()
     }
 
+    checkEnumClass()
+
+}
+
+fun checkEnumClass(){
+    var checkstate = appRunEnum.IDLE
+    val message = when (checkstate) {                  // 3
+        appRunEnum.IDLE -> "It's idle"
+        appRunEnum.RUNNING -> "It's running"
+        appRunEnum.FINISHED -> "It's finished"
+    }
+    println(message)
 }
 
 fun increment() = x++
