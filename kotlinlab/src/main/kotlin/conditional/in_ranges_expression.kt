@@ -30,5 +30,20 @@ fun main(){
         print("$x ")
     }
 
+    for (i in  0 until 3){
+        print("$i ")
+    }
+    println("========")
+
+    for (c in 'a'..'d') {        // 1
+        print(c)
+    }
+    println(" ==========")
+
+    for (c in 'z' downTo 's' step 2) { // 2
+        print(c)
+    }
+    println(" =============")
+
 
 }
