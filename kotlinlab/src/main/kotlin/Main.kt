@@ -31,6 +31,9 @@ fun main(args: Array<String>) {
 
 }
 
+
+
+
 fun checkEnumClass(){
     var checkstate = appRunEnum.IDLE
     val message = when (checkstate) {                  // 3
