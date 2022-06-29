@@ -18,10 +18,16 @@ fun main(args: Array<String>) {
     println(mainEmail)
 
     println("-- check null and execute --")
-    val values = "v"
+    var values = "v"
     values?.let{
         "vivek"
     }
     println(values)
+
+    //? it will allow to make null
+    var nullable :String? = "this is string"
+    nullable = null
+
+
 
 }
