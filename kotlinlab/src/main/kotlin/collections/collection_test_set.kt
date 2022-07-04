@@ -86,4 +86,14 @@ fun main(){
     println("Total number of elements: $totalCount")
     println("Number of even elements: $evenCount")
 
+    println("partition====")
+    val evenOdd = numbers.partition { it % 2 == 0 }           // 2
+    val (positives, negatives) = numbers.partition { it > 0 } // 3
+
+    println("Numbers: $numbers")
+    println("Even numbers: ${evenOdd.first}")
+    println("Odd numbers: ${evenOdd.second}")
+    println("Positive numbers: $positives")
+    println("Negative numbers: $negatives")
+
 }
