@@ -61,11 +61,22 @@ fun main(){
     println(allLess6None)
 
     println("== fina and findLast")
-    val first = items.find { it.startsWith("a") }                                // 2
-    val last = items.findLast { it.startsWith("or") }                             // 3
-    val nothing = items.find { it.contains("nothing") }
+//    val first = items.find { it.startsWith("a") }                                // 2
+//    val last = items.findLast { it.startsWith("or") }                             // 3
+//    val nothing = items.find { it.contains("nothing") }
+//
+//    println("The first word starting with \"a\" is \"$first\"")
+//    println("The last word starting with \"or\" is \"$last\"")
+//    println("The first word containing \"nothing\" is ${nothing?.let { "\"$it\"" } ?: "null"}")
 
-    println("The first word starting with \"a\" is \"$first\"")
-    println("The last word starting with \"or\" is \"$last\"")
-    println("The first word containing \"nothing\" is ${nothing?.let { "\"$it\"" } ?: "null"}")
+    println("== first and last == ")
+    val first = numbers.first()                          // 2
+    val last = numbers.last()                            // 3
+
+    val firstEven = numbers.first { it % 2 == 0 }        // 4
+    val lastOdd = numbers.last { it % 2 != 0 }           // 5
+
+    println("Numbers: $numbers")
+    println("First $first, last $last, first even $firstEven, last odd $lastOdd")
+
 }
