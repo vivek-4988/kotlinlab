@@ -3,7 +3,7 @@ package collections
 import java.util.*
 
 fun main(){
-    val items = listOf("kiwi","apple","banana","orange","avocado")
+    val items = listOf("kiwi","apple","banana","ora","orange","orang","avocado")
 
     when{
         "kiwi" in items -> println("yes")
@@ -60,5 +60,12 @@ fun main(){
     println(allEvenNone)
     println(allLess6None)
 
+    println("== fina and findLast")
+    val first = items.find { it.startsWith("a") }                                // 2
+    val last = items.findLast { it.startsWith("or") }                             // 3
+    val nothing = items.find { it.contains("nothing") }
 
+    println("The first word starting with \"a\" is \"$first\"")
+    println("The last word starting with \"or\" is \"$last\"")
+    println("The first word containing \"nothing\" is ${nothing?.let { "\"$it\"" } ?: "null"}")
 }
