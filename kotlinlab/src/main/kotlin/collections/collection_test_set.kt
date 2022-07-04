@@ -79,4 +79,11 @@ fun main(){
     println("Numbers: $numbers")
     println("First $first, last $last, first even $firstEven, last odd $lastOdd")
 
+    println("== count == ")
+    val totalCount = numbers.count()                     // 2
+    val evenCount = numbers.count { it % 2 == 0 }        // 3
+
+    println("Total number of elements: $totalCount")
+    println("Number of even elements: $evenCount")
+
 }
