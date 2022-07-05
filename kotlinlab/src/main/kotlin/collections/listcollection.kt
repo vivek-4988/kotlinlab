@@ -24,6 +24,10 @@ fun main(){
     println("Empty: $empty, min = ${empty.minOrNull()}, max = ${empty.maxOrNull()}")        // 2
     println("Only: $only, min = ${only.minOrNull()}, max = ${only.maxOrNull()}")
 
+    //for sorted
+    val shuffled = listOf(5, 4, 2, 1, 3, -10)
+    //https://play.kotlinlang.org/byExample/05_Collections/14_sorted
+
 }
 
 fun addSystemUser(newUser:Int){
