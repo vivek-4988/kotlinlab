@@ -1,8 +1,8 @@
 import classinstance.appRunEnum
 import functionskotlin.MultiObjectFunction
 
-val PI = 3.14
-var x = 1;
+private val PI = 3.14
+private var x = 1;
 
 fun main(args: Array<String>) {
 //    println(sum(4, 3))
